@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ExValidatorExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKO-db-nB8">
+                                <rect key="frame" x="16" y="36" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nww-s4-Wc0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="i5k-UR-P6l"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Min Length : 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRH-nb-LZE">
+                                <rect key="frame" x="16" y="82" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Ib-kq-rOt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="I3j-d9-i6h"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Max Length : 8" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="29A-gJ-Ar3">
+                                <rect key="frame" x="16" y="128" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="453-TG-bNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="N2k-TJ-Wd9"/>
+                                </connections>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="m9Q-Pk-gLB">
+                                <rect key="frame" x="490" y="174" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="NTw-BN-FR4"/>
+                                    <constraint firstAttribute="width" constant="94" id="uBj-6f-Hyq"/>
+                                </constraints>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sho-35-7Va">
+                                <rect key="frame" x="16" y="174" width="458" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="KtM-0Y-beQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m9Q-Pk-gLB" firstAttribute="top" secondItem="29A-gJ-Ar3" secondAttribute="bottom" constant="16" id="2KH-9B-ekI"/>
+                            <constraint firstItem="29A-gJ-Ar3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="GcR-Sd-aOi"/>
+                            <constraint firstItem="FKO-db-nB8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="J9P-s2-ycq"/>
+                            <constraint firstAttribute="trailing" secondItem="m9Q-Pk-gLB" secondAttribute="trailing" constant="16" id="JD0-NL-TuG"/>
+                            <constraint firstItem="aRH-nb-LZE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="K7l-vv-Giv"/>
+                            <constraint firstItem="Sho-35-7Va" firstAttribute="top" secondItem="29A-gJ-Ar3" secondAttribute="bottom" constant="16" id="QEf-9X-XwM"/>
+                            <constraint firstItem="m9Q-Pk-gLB" firstAttribute="leading" secondItem="Sho-35-7Va" secondAttribute="trailing" constant="16" id="TnQ-63-SV3"/>
+                            <constraint firstItem="29A-gJ-Ar3" firstAttribute="top" secondItem="aRH-nb-LZE" secondAttribute="bottom" constant="16" id="Wvw-X4-lLX"/>
+                            <constraint firstItem="FKO-db-nB8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="ZEq-GH-icH"/>
+                            <constraint firstAttribute="trailing" secondItem="FKO-db-nB8" secondAttribute="trailing" constant="16" id="dm4-6M-ztW"/>
+                            <constraint firstAttribute="trailing" secondItem="aRH-nb-LZE" secondAttribute="trailing" constant="16" id="gW4-sV-p7d"/>
+                            <constraint firstItem="Sho-35-7Va" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="h7D-Ii-9Ok"/>
+                            <constraint firstItem="aRH-nb-LZE" firstAttribute="top" secondItem="FKO-db-nB8" secondAttribute="bottom" constant="16" id="jb0-ed-y9r"/>
+                            <constraint firstAttribute="trailing" secondItem="29A-gJ-Ar3" secondAttribute="trailing" constant="16" id="oUp-pu-SfV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="maxLengthField" destination="29A-gJ-Ar3" id="Wlp-cF-mBy"/>
+                        <outlet property="minLengthField" destination="aRH-nb-LZE" id="2WQ-37-o5b"/>
+                        <outlet property="requiredField" destination="FKO-db-nB8" id="JCh-7P-YOx"/>
+                        <outlet property="stepper" destination="m9Q-Pk-gLB" id="iMH-kV-Jqo"/>
+                        <outlet property="stepperLabel" destination="Sho-35-7Va" id="ZLd-oH-vdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
