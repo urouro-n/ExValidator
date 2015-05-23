@@ -10,6 +10,12 @@ A validation library for Swift
 ## Example
 
 ```swift
+if "foo".validate([.Required]) {
+    // should be true
+}
+```
+
+```swift
 struct Model {
     var name: String
     var age: Int
