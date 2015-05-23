@@ -5,24 +5,48 @@
 [![License](https://img.shields.io/cocoapods/l/ExValidator.svg?style=flat)](http://cocoapods.org/pods/ExValidator)
 [![Platform](https://img.shields.io/cocoapods/p/ExValidator.svg?style=flat)](http://cocoapods.org/pods/ExValidator)
 
-## Usage
+A validation library for Swift
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Example
 
-## Requirements
+```swift
+struct Model {
+    var name: String
+    var age: Int
 
-## Installation
+    init() {
+        name = ""
+        age = 0
+    }
+}
 
-ExValidator is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+func validateData (data: Model) -> Bool {
+    if data.name.validate([.Required]) &&
+       data.age.validate([.Min(20)])
+    {
+        return true
+    }
 
-```ruby
-pod "ExValidator"
+    return false
+}
+
+var data: Model = Model()
+validateData(data) // should be false
+
+data = Model()
+data.name = "Name"
+data.age = 20
+validateData(data) // should be true
 ```
 
-## Author
+## Rules
 
-kenta.nakai, kenta.nakai@urouro.net
+- `.Required`
+- `.Min(min :Int)`
+- `.Max(max :Int)`
+
+WIP
+Multiple rules doesn't work yet.
 
 ## License
 
