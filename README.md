@@ -46,6 +46,7 @@ validateData(data) // should be true
 - `.Max(max :Int)`
 
 WIP
+
 Multiple rules doesn't work yet.
 
 ## License
