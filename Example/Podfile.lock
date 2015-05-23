@@ -1,0 +1,14 @@
+PODS:
+  - ExValidator (0.0.1)
+
+DEPENDENCIES:
+  - ExValidator (from `../`)
+
+EXTERNAL SOURCES:
+  ExValidator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ExValidator: 2c75cb6a79a5f6f46128ecd50ca875621cafb7ca
+
+COCOAPODS: 0.37.1
