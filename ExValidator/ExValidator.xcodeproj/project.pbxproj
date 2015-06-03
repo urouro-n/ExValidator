@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABB427061B1F52B200C54051 /* String+ExValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB427051B1F52B200C54051 /* String+ExValidator.swift */; };
+		ABB427081B1F52DA00C54051 /* Int+ExValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB427071B1F52DA00C54051 /* Int+ExValidator.swift */; };
+		ABB4270A1B1F52ED00C54051 /* Bool+ExValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB427091B1F52ED00C54051 /* Bool+ExValidator.swift */; };
 		ABE545B61B1DFB590093B490 /* ExValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE545B51B1DFB590093B490 /* ExValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABE545BC1B1DFB590093B490 /* ExValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE545B01B1DFB590093B490 /* ExValidator.framework */; };
 		ABE545CE1B1DFB6A0093B490 /* ExValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE545CD1B1DFB6A0093B490 /* ExValidator.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ABB427051B1F52B200C54051 /* String+ExValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExValidator.swift"; sourceTree = "<group>"; };
+		ABB427071B1F52DA00C54051 /* Int+ExValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+ExValidator.swift"; sourceTree = "<group>"; };
+		ABB427091B1F52ED00C54051 /* Bool+ExValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+ExValidator.swift"; sourceTree = "<group>"; };
 		ABE545B01B1DFB590093B490 /* ExValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE545B41B1DFB590093B490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABE545B51B1DFB590093B490 /* ExValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExValidator.h; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				ABE545CD1B1DFB6A0093B490 /* ExValidator.swift */,
+				ABB427051B1F52B200C54051 /* String+ExValidator.swift */,
+				ABB427071B1F52DA00C54051 /* Int+ExValidator.swift */,
+				ABB427091B1F52ED00C54051 /* Bool+ExValidator.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -235,7 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB427061B1F52B200C54051 /* String+ExValidator.swift in Sources */,
+				ABB427081B1F52DA00C54051 /* Int+ExValidator.swift in Sources */,
 				ABE545CE1B1DFB6A0093B490 /* ExValidator.swift in Sources */,
+				ABB4270A1B1F52ED00C54051 /* Bool+ExValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +440,7 @@
 				ABE545C81B1DFB590093B490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABE545C91B1DFB590093B490 /* Build configuration list for PBXNativeTarget "ExValidatorTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +449,7 @@
 				ABE545CB1B1DFB590093B490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

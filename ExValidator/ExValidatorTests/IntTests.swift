@@ -33,4 +33,9 @@ class IntTests : XCTestCase {
         XCTAssertTrue(0.validate([.Max(1)]))
         XCTAssertTrue(0.validate([.Max(0)]))
     }
+    
+    func testEmail() {
+        XCTAssertFalse(0.validate([.Email]))
+        XCTAssertFalse(100.validate([.Email]))
+    }
 }

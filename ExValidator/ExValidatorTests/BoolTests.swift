@@ -24,4 +24,8 @@ class BoolTests : XCTestCase {
     func testMax() {
         XCTAssertTrue(true.validate([.Max(0)]))
     }
+    
+    func testEmail() {
+        XCTAssertFalse(true.validate([.Email]))
+    }
 }

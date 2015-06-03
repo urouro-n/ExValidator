@@ -33,4 +33,12 @@ class StringTests : XCTestCase {
         XCTAssertTrue("".validate([.Max(1)]))
         XCTAssertTrue("".validate([.Max(0)]))
     }
+    
+    func testEmail() {
+        XCTAssertTrue("hello@example.com".validate([.Email]))
+        XCTAssertFalse("@example.com".validate([.Email]))
+        XCTAssertFalse("hello@".validate([.Email]))
+        XCTAssertFalse("nruvosmek".validate([.Email]))
+        XCTAssertFalse("hello@example.i".validate([.Email]))
+    }
 }
