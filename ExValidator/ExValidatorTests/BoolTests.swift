@@ -28,4 +28,8 @@ class BoolTests : XCTestCase {
     func testEmail() {
         XCTAssertFalse(true.validate([.Email]))
     }
+    
+    func testURL() {
+        XCTAssertFalse(true.validate([.URL]))
+    }
 }

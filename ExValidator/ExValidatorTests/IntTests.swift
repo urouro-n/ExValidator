@@ -38,4 +38,9 @@ class IntTests : XCTestCase {
         XCTAssertFalse(0.validate([.Email]))
         XCTAssertFalse(100.validate([.Email]))
     }
+    
+    func testURL() {
+        XCTAssertFalse(0.validate([.URL]))
+        XCTAssertFalse(100.validate([.URL]))
+    }
 }

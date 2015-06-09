@@ -28,6 +28,10 @@ extension Bool : Validatable {
                 
                 return false
                 
+            case .URL:
+                
+                return false
+                
             }
         }
         

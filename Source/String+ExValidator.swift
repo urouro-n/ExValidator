@@ -49,6 +49,23 @@ extension String : Validatable {
                 }
                 
                 return false
+                
+            case .URL:
+                
+                let regex: NSRegularExpression? = NSRegularExpression(
+                    pattern: "^(https?://)?([-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*))$",
+                    options: NSRegularExpressionOptions.allZeros,
+                    error: nil)
+                
+                if let r = regex {
+                    let numberOfMatches: Int = r.numberOfMatchesInString(self, options: NSMatchingOptions.allZeros, range: NSMakeRange(0, count(self)))
+                    
+                    if numberOfMatches <= 0 {
+                        return false
+                    }
+                    
+                    return true
+                }
             }
         }
         

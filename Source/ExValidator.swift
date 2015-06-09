@@ -5,6 +5,7 @@ public enum ValidateRule {
     case Min(Int)
     case Max(Int)
     case Email
+    case URL
 }
 
 public protocol Validatable {

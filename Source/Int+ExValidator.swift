@@ -32,6 +32,10 @@ extension Int : Validatable {
                 
                 return false
                 
+            case .URL:
+                
+                return false
+                
             }
         }
         
